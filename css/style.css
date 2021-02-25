@@ -1,0 +1,226 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap');
+
+/* src:local(※); - 내 홈페이지에 접속한 사용자의 컴퓨터에 글꼴이 있으면 다운 받지 말아라 
+   src:url(../font/noto.eot) format('eot'); 
+   src:url(../font/noto.woff) format('woff'); 
+   src:url(../font/noto.woff2) format('woff2'); 
+   src:url(../font/noto.TTF) format('truetype'); 
+*/
+
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{display: block; text-decoration: none; color: #212121; font-family: 'Noto Sans KR', sans-serif;}
+a:hover{text-decoration: none; color: #212121;}
+body{font-family: 'Noto Sans KR', sans-serif;}
+img{width: 100%;}
+
+wrap{width: 100%; }
+header{width: 100%; height: 80px; background-color: transparent;
+   display: flex; justify-content: space-between; position: absolute; z-index: 100; padding-bottom: 5vw; transition: all 0.5s;}
+header.active{position: fixed; background-color: rgba(0,0,0,0.5);}
+header .logo{width: 4.7vw; margin: 1vw 1.5vw; margin-left: 4vw; }
+header nav{width: 42vw; margin-top: 2vw;}
+header nav ul{display: flex; justify-content: space-between;}
+header nav ul li a{font-size: 0.92vw; color: #fff; }
+header .top_menu{width: 17vw; margin: 1.5vw; margin-top: 1vw; margin-right: 4vw;}
+header .top_menu ul{display: flex; justify-content: space-between;}
+header .top_menu ul li a{font-size: 0.7vw; color: #fff;}
+header ul li a{position: relative; }
+header nav ul li a:hover{color: #fff;}
+header ul li a:after{content: ""; position: absolute; width: 0%; height: 2.5px; 
+    background-color: #fff; left: 50%; transform: translateX(-50%); bottom: -6px; transition: all 0.5s;}
+header ul li a:hover:after{width: 100%; }
+header .top_menu a:after{height: 1px;}
+header .mobile_btn{display: none;}
+header .mobile_menu{display: none;}
+
+
+section{position: relative; width: 100%; overflow: hidden;}
+
+
+.main{width: 100%; overflow: hidden; position: relative;}
+.main video{width: 100%;  position: absolute; left: 50%; top: 39%;  transform: translateX(-50%) translateY(-50%);}
+
+
+.venue{margin-top: 0vw;}
+.venue h1{width: 14vw; margin: 0 auto; margin-bottom: 2.5vw; margin-top: 3.5vw;}
+.venue .swiper-container{width: 80%; margin:0 auto;   /*height: 40vw;*/ }
+.venue .swiper-wrapper{ margin: 0 auto;}
+.venue .txt {text-align: center; /*width: 19vw;*/ margin-top: 1.3vw; }
+.venue .txt h3{font-size: 1.2vw; font-weight: 600;}
+.venue .txt .title{font-size: 0.83vw; font-weight: 600;}
+.venue .txt .con{font-size: 0.78vw; color: #5d5d5d; }
+.venue .s1_next{right: 7vw; width: 1.1vw; top: 20vw;}
+.venue .s1_prev{left: 7vw; width: 1.1vw; top: 20vw;}
+
+
+
+.c_menu{margin-top: -4.5vw;}
+.c_menu .left_menu{padding: 0;}
+.c_menu .left_menu .left_in{background-image: url(../images/enjoy_steak.jpg); background-repeat: no-repeat;  height: 100vh; box-sizing: border-box; background-size: cover;}
+.c_menu .right_menu{padding:0;}
+.c_menu .right_menu ul{display: flex; flex-flow: row wrap;}
+.c_menu .right_menu ul li{width: 50%; }
+
+
+    
+.steak_menu{width: 100%;}
+.steak_menu h1{width: 13vw; margin: 0 auto; margin-top:8vw; margin-bottom: 4vw;}
+.steak_menu .steak_list{width: 80%; margin: 0 auto;}
+.steak_menu .txt{text-align: center;}
+.steak_menu .txt h3{font-size: 1vw; font-weight: 600; margin-top: 1vw;}
+.steak_menu .txt .s_n{font-size: 0.83vw; font-weight: 500;}
+.steak_menu .txt .s_p{margin-top: -0.6vw;}
+.steak_menu .txt .s_p span{color: #920f15; font-size: 1.2vw; font-weight: 500; } 
+
+
+
+.event h1{width: 12vw; margin: 0 auto; margin-top:6vw; margin-bottom: 4vw;}
+.event .row{width: 80%; margin: 0 auto;}
+.event .contact {padding: 0 0.75vw; margin-top: 3vw;}
+.event .contact .con_in{ margin: 0 auto; border: 1px solid #d7d7d7; }
+.event .contact .con_in:nth-child(2){border-left: 0; border-right: 0;}
+.event .contact .txt{text-align: center; }
+.event .contact .txt h2{font-size: 1.4vw; font-weight:600; margin-bottom: -0.01vw;}
+.event .contact .txt p{padding-bottom: 2vw;}
+.event .contact .icon1{width: 2.2vw; margin: 0 auto; margin-top: 2.5vw; margin-bottom: 0.7vw;}
+.event .contact .icon2{width: 1.9vw; margin: 0 auto; margin-top: 2.5vw;margin-bottom: 0.7vw;}
+.event .contact .icon3{width: 2.5vw; margin: 0 auto; margin-top: 3.1vw; margin-bottom: 0.9vw; }
+.event .contact p img{width: 1.5vw; margin-bottom: 0.5vw; margin-left: 0.2vw;}
+
+
+
+
+footer{background-color: #252525; width: 100%; height: 15vw;}
+footer .f_wrap{width: 78%; margin: 0 auto; }
+footer .f_wrap .logo{width: 5vw; float: left; margin-top: 3vw;}
+footer .txt { }
+footer .txt .t_top li{float: left; margin-top: 3.2vw;}
+footer .txt .t_top li:first-child{margin-left: 1.4vw;}
+footer .txt .t_top .bold{font-weight: 500;}
+footer .txt .t_top li a{color: #bcbcbc; }
+footer .txt p{color: white; clear: both; margin-left: 6.2vw; font-size: 0.7vw; 
+line-height: 1.4vw; color: #bcbcbc;}
+footer .f_wrap .sns{display: flex; float: right; margin-top: -8vw;}
+footer .f_wrap .sns li{width: 1.3vw; justify-content: space-between; margin-left: 0.3vw;}
+
+
+
+
+/* 태블릿 */
+@media screen and (max-width:960px){
+       
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 모바일 */
+@media screen and (max-width:480px){
+    header{height: 60px; padding-bottom: 20px;}
+    header nav{display: none;}
+    header .top_menu{display: none;}
+    header .logo{width: 16vw; margin: 2vw;}
+    header .mobile_btn{display: block; width: 9vw; margin: 6vw; margin-top: 5vw;}
+    header .mobile_menu{display: block; position: absolute;
+     top: 0; left: -100vw; background-color: rgba(0,0,0,0.5); width: 100%; }
+    header .mobile_menu .menu_in{background-color: #fff; width: 75vw;
+    padding: 4vw; box-sizing: border-box; float: left; height: 100%;}
+    header .mobile_menu button{float: left; width: 10vw; margin: 10vw 7.5vw;} 
+    header .mobile_menu .menu_in p{text-align: center; font-size: 2.8vw; margin-top: 3vw; font-weight: 500;}
+    header .mobile_menu .menu_in .member{width: 100%; height: 8vw; margin-top: 4vw; margin-bottom: 5vw; }
+    header .mobile_menu .menu_in .member a{float: left; width: 50%; text-align: center; font-size: 2.5vw; border: 1px solid #999; padding: 2vw 1vw; box-sizing: border-box;}  
+    header .mobile_menu .menu_in .member a.active{background-color: #212121;
+    color: #fff; border:1px solid #212121; }
+    header .mobile_menu .menu_in .icon{margin-top: 2vw;  }
+    header .mobile_menu .menu_in .icon ul{display: flex; justify-content: center;}
+    header .mobile_menu .menu_in .icon ul li{box-sizing: border-box; padding: 6vw; text-align: center; border: 1px solid #ccc; height: 27vw; }
+    header .mobile_menu .menu_in .icon ul li a:after{content: none;}
+    header .mobile_menu .menu_in .icon ul li:last-child{border-right: 1px solid #ccc; width: 80vw;}
+    header .mobile_menu .menu_in .icon ul li:nth-child(2){border-left: 0; border-right: 0;}   
+    header .mobile_menu .menu_in .icon ul li p{font-size: 2.6vw; margin-top: -0.3vw;}
+    
+    header .mobile_menu .menu_in .tab{width: 100%; margin-top: 5vw;}
+    header .mobile_menu .menu_in .tab .title{display: flex; justify-content: space-between;} 
+    header .mobile_menu .menu_in .tab .title a{font-size: 2.6vw; font-weight: bold; width: 33.3333333%; border: 1px solid #ccc; background-color: #efefef; 
+    text-align: center; padding: 2vw; box-sizing: border-box; color: #666;
+    font-weight: 500;}
+    header .mobile_menu .menu_in .tab .title a:nth-child(2){border-left: 0;
+    border-right: 0;}
+    header .mobile_menu .menu_in .tab .title a.active{background-color: #fff;
+    border-bottom: none;}
+    header .mobile_menu .menu_in .tab .content{position: relative; width: 100%;}
+    header .mobile_menu .menu_in .tab .content div{position: absolute; background-color: #fff; padding: 5vw 0; box-sizing: border-box; }
+    header .mobile_menu .menu_in .tab .content div a{font-size: 3.2vw; padding: 1vw; font-weight: 500;}
+    
+    
+    
+    
+    .main{height: auto;}
+    .main video{position: relative; top: -8vw; left: 0; transform: translateX(0) translateY(0);}
+    
+    
+    
+     
+    
+    .venue .swiper1 h1{width: 38vw;}
+    .venue .s1_next{width: 2.8vw; margin-right:-4vw; top: 55vw;}
+    .venue .s1_prev{width: 2.8vw; margin-left:3vw; left: 0; top: 55vw;}
+    .venue .txt h3{font-size: 4.5vw; margin-top: 4vw;}
+    .venue .txt .title{font-size: 2.8vw; margin-top: -0.5vw;}
+    .venue .txt .con{font-size: 2.3vw;}
+    
+    
+    .c_menu{margin-top: 5vw;}
+    .c_menu .left_menu .left_in{ height: 60vh; margin-top: 8vw;}
+    
+    
+    .steak_menu h1{width: 35vw;}
+    .steak_menu .txt h3{font-size:4vw; margin-top: 3.2vw;}
+    .steak_menu .txt .s_n{font-size: 3vw; font-weight: 600;}  
+    .steak_menu .txt .s_p{font-size: 3vw;} 
+    .steak_menu .txt .s_p span{font-size: 4.5vw;}
+    
+    
+    .event .contact {margin-top: 7vw; }
+    .event .contact .con_in{ }
+    .event .contact .txt h2{font-size: 3.5vw; text-align: center;}
+    .event .contact p{font-size: 2.5vw; }
+    .event .contact .icon1{width: 5vw;} 
+    .event .contact .icon2{width: 4vw;}  
+    .event .contact .icon3{width: 5.1vw;}
+    .event .contact .con_in:nth-child(2){border-left: 1px solid #d7d7d7; border-right: 1px solid #d7d7d7; border-top: 0; border-bottom: 0;}
+    
+    
+    footer{height:33vh; margin-top: 40vw;}
+    footer .f_wrap .logo{width: 12vw; padding-top: 2vw;}
+    footer .f_wrap .t_top{clear: both; width: 80%;}
+    footer .f_wrap .t_top li{ float: left; }
+    footer .f_wrap .t_top li:first-child{margin-left: 0;}
+    footer .f_wrap .t_top li:nth-child(5){margin-top: -1vw;}
+    footer .f_wrap .t_top li:nth-child(6){margin-top: -1vw;}
+    footer .f_wrap .t_top li:nth-child(7){margin-top: -1vw;}
+    footer .txt .t_top li a{font-size: 2.5vw; display: inline-block; } 
+    footer .txt p{font-size: 2.1vw; line-height: 3.2vw; margin-left: 0; padding-top: 3.1vw;}
+    footer .f_wrap .sns li{width: 3.5vw; margin-left: 0.8vw; margin-top: -35vw;}
+    
+    
+}
