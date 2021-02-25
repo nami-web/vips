@@ -210,7 +210,7 @@ footer .f_wrap .sns li{width: 1.3vw; justify-content: space-between; margin-left
     .event .contact .con_in:nth-child(2){border-left: 1px solid #d7d7d7; border-right: 1px solid #d7d7d7; border-top: 0; border-bottom: 0;}
     
     
-    footer{height:33vh; margin-top: 30vw; }
+    footer{height:33vh; margin-top: 20vw; }
     footer .f_wrap .logo{width: 12vw; padding-top: 2vw;}
     footer .f_wrap .t_top{clear: both; width: 80%;}
     footer .f_wrap .t_top li{ float: left; }
