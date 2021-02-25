@@ -200,6 +200,11 @@ footer .f_wrap .sns li{width: 1.3vw; justify-content: space-between; margin-left
     .steak_menu .txt .s_p span{font-size: 4.5vw;}
     
     
+    
+    .slide .s2_next{width: 2.8vw;}
+    .slide .s2_prev{width: 2.8vw;}
+    
+    
     .event .contact {margin-top: 7vw; }
     .event .contact .con_in{ }
     .event .contact .txt h2{font-size: 3.5vw; text-align: center;}
@@ -220,7 +225,7 @@ footer .f_wrap .sns li{width: 1.3vw; justify-content: space-between; margin-left
     footer .f_wrap .t_top li:nth-child(7){margin-top: -1vw;}
     footer .txt .t_top li a{font-size: 2.5vw; display: inline-block; } 
     footer .txt p{font-size: 2.1vw; line-height: 3.2vw; margin-left: 0; padding-top: 3.1vw;}
-    footer .f_wrap .sns li{width: 3.5vw; margin-left: 0.8vw; margin-top: -37vw;}
+    footer .f_wrap .sns li{width: 3.5vw; margin-left: 0.8vw; margin-top: -38vw;}
     
     
 }
