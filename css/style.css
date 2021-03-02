@@ -144,8 +144,9 @@ footer .f_wrap .sns li{width: 1.3vw; justify-content: space-between; margin-left
      top: 0; left: -100vw; background-color: rgba(0,0,0,0.5); width: 100%; }
     header .mobile_menu .menu_in{background-color: #fff; width: 75vw;
     padding: 4vw; box-sizing: border-box; float: left; height: 100%;}
-    header .mobile_menu button{float: left; width: 10vw; margin: 10vw 7.5vw;} 
+    header .mobile_menu button{float: left; width: 10vw; margin: 10.5vw 7.5vw;} 
     header .mobile_menu .menu_in p{text-align: center; font-size: 2.8vw; margin-top: 3vw; font-weight: 500;}
+    header .mobile_menu .menu_in p span{color: #921a1d; font-weight: bold; font-size: 3.2vw;}
     header .mobile_menu .menu_in .member{width: 100%; height: 8vw; margin-top: 4vw; margin-bottom: 5vw; }
     header .mobile_menu .menu_in .member a{float: left; width: 50%; text-align: center; font-size: 2.5vw; border: 1px solid #999; padding: 2vw 1vw; box-sizing: border-box;}  
     header .mobile_menu .menu_in .member a.active{background-color: #212121;
@@ -156,7 +157,7 @@ footer .f_wrap .sns li{width: 1.3vw; justify-content: space-between; margin-left
     header .mobile_menu .menu_in .icon ul li a:after{content: none;}
     header .mobile_menu .menu_in .icon ul li:last-child{border-right: 1px solid #ccc; width: 80vw;}
     header .mobile_menu .menu_in .icon ul li:nth-child(2){border-left: 0; border-right: 0;}   
-    header .mobile_menu .menu_in .icon ul li p{font-size: 2.6vw; margin-top: -0.3vw;}
+    header .mobile_menu .menu_in .icon ul li p{font-size: 2.3vw; margin-top: -0.3vw;}
     
     header .mobile_menu .menu_in .tab{width: 100%; margin-top: 5vw;}
     header .mobile_menu .menu_in .tab .title{display: flex; justify-content: space-between;} 
@@ -169,7 +170,7 @@ footer .f_wrap .sns li{width: 1.3vw; justify-content: space-between; margin-left
     border-bottom: none;}
     header .mobile_menu .menu_in .tab .content{position: relative; width: 100%;}
     header .mobile_menu .menu_in .tab .content div{position: absolute; background-color: #fff; padding: 5vw 0; box-sizing: border-box; }
-    header .mobile_menu .menu_in .tab .content div a{font-size: 3.2vw; padding: 1vw; font-weight: 500;}
+    header .mobile_menu .menu_in .tab .content div a{font-size: 3.6vw; padding: 1vw; font-weight: 500;}
     
     
     
