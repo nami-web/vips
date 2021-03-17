@@ -63,7 +63,7 @@ section{position: relative; width: 100%; overflow: hidden;}
 
 .c_menu{margin-top: -4.5vw;}
 .c_menu .left_menu{padding: 0;}
-.c_menu .left_menu .left_in{background-image: url(../images/enjoy_steak.jpg); background-repeat: no-repeat;  height: 100vh; box-sizing: border-box; background-size: cover;}
+.c_menu .left_menu .left_in{background-image: url(https://cdn.jsdelivr.net/gh/nami-web/vips/images/enjoy_steak.jpg); background-repeat: no-repeat;  height: 100vh; box-sizing: border-box; background-size: cover;}
 .c_menu .right_menu{padding:0;}
 .c_menu .right_menu ul{display: flex; flex-flow: row wrap;}
 .c_menu .right_menu ul li{width: 50%; }
