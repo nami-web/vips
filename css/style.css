@@ -17,10 +17,11 @@
 li{list-style: none;}
 a{display: block; text-decoration: none; color: #212121; font-family: 'Noto Sans KR', sans-serif;}
 a:hover{text-decoration: none; color: #212121;}
+html,body{height: 100%;}
 body{font-family: 'Noto Sans KR', sans-serif;}
 img{width: 100%;}
 
-wrap{width: 100%; }
+.wrap{width: 100%; height: 100%;}
 header{width: 100%; height: 80px; background-color: transparent;
    display: flex; justify-content: space-between; position: absolute; z-index: 100; padding-bottom: 5vw; transition: all 0.5s;}
 header.active{position: fixed; background-color: rgba(0,0,0,0.5);}
@@ -41,11 +42,11 @@ header .mobile_btn{display: none;}
 header .mobile_menu{display: none;}
 
 
-section{position: relative; width: 100%; overflow: hidden;}
+section{position: relative; width: 100%; overflow: hidden; float: left; height: 100%;}
 
 
-.main{width: 100%; overflow: hidden; position: relative;}
-.main video{width: 100%;  position: absolute; left: 50%; top: 39%;  transform: translateX(-50%) translateY(-50%);}
+.main{width: 100%; overflow: hidden; position: relative; height: 100%;}
+.main video{width: 100%;  position: absolute; left: 50%; top: 39%;  transform: translateX(-50%) translateY(-50%); height: 120%;}
 
 
 .venue{margin-top: 0vw;}
@@ -63,7 +64,7 @@ section{position: relative; width: 100%; overflow: hidden;}
 
 .c_menu{margin-top: -4.5vw;}
 .c_menu .left_menu{padding: 0;}
-.c_menu .left_menu .left_in{background-image: url(https://cdn.jsdelivr.net/gh/nami-web/vips/images/enjoy_steak.jpg); background-repeat: no-repeat;  height: 100vh; box-sizing: border-box; background-size: cover;}
+.c_menu .left_menu .left_in{background-image: url(../images/enjoy_steak.jpg); background-repeat: no-repeat;  height: 100vh; box-sizing: border-box; background-size: cover;}
 .c_menu .right_menu{padding:0;}
 .c_menu .right_menu ul{display: flex; flex-flow: row wrap;}
 .c_menu .right_menu ul li{width: 50%; }
@@ -97,7 +98,7 @@ section{position: relative; width: 100%; overflow: hidden;}
 
 
 
-footer{background-color: #252525; width: 100%; height: 15vw;}
+footer{background-color: #252525; width: 100%; height: 15vw; float: left;}
 footer .f_wrap{width: 78%; margin: 0 auto; }
 footer .f_wrap .logo{width: 5vw; float: left; margin-top: 3vw;}
 footer .txt { }
@@ -174,15 +175,18 @@ footer .f_wrap .sns li{width: 1.3vw; justify-content: space-between; margin-left
     
     
     
+    section{height: auto;}
     
-    .main{height: auto;}
-    .main video{position: relative; top: -8vw; left: 0; transform: translateX(0) translateY(0);}
+    
+    
+    .main{height: 56vw;}
+    .main video{position: relative; top: -8vw; left: 0; transform: translateX(0) translateY(0); width: 100%; height: 100%;}
     
     
     
      
     
-    .venue .swiper1 h1{width: 38vw;}
+    .venue .swiper1 h1{width: 38vw; }
     .venue .s1_next{width: 2.8vw; margin-right:-4vw; top: 55vw;}
     .venue .s1_prev{width: 2.8vw; margin-left:3vw; left: 0; top: 55vw;}
     .venue .txt h3{font-size: 4.5vw; margin-top: 4vw;}
@@ -202,10 +206,11 @@ footer .f_wrap .sns li{width: 1.3vw; justify-content: space-between; margin-left
     
     
     
-    .slide .s2_next{width: 2.8vw;}
-    .slide .s2_prev{width: 2.8vw;}
+    .slide .s2_next{width: 1.8vw;}
+    .slide .s2_prev{width: 1.8vw;}
     
     
+    .event h1{width: 35vw;}
     .event .contact {margin-top: 7vw; }
     .event .contact .con_in{ }
     .event .contact .txt h2{font-size: 3.5vw; text-align: center;}
@@ -216,7 +221,7 @@ footer .f_wrap .sns li{width: 1.3vw; justify-content: space-between; margin-left
     .event .contact .con_in:nth-child(2){border-left: 1px solid #d7d7d7; border-right: 1px solid #d7d7d7; border-top: 0; border-bottom: 0;}
     
     
-    footer{height:33vh; margin-top: 18vw; }
+    footer{height:33vh; margin-top: 18vw; width: 100%; float: left;}
     footer .f_wrap .logo{width: 12vw; padding-top: 2.5vw;}
     footer .f_wrap .t_top{clear: both; width: 80%;}
     footer .f_wrap .t_top li{ float: left; }
